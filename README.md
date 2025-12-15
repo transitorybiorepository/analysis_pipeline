@@ -6,7 +6,7 @@
 The DNA analysis pipeline works as follows to recreate the multiple sequence alignment and phylogenetic tree:
 
 1. Download the FASTQ sample files: [samples.zip](https://github.com/transitorybiorepository/analysis_pipeline/blob/main/samples.zip)
-2. Download and run the following bash script to convert the FASTQ files to FASTA files. Note, SampleC part1 will be automatically excluded: [fastq_to_fasta.sh](https://github.com/transitorybiorepository/analysis_pipeline/blob/main/fastq_to_fasta.sh)
+2. Download and run the following bash script to convert the FASTQ files to FASTA files. Note, SampleC part2 will be automatically excluded: [fastq_to_fasta.sh](https://github.com/transitorybiorepository/analysis_pipeline/blob/main/fastq_to_fasta.sh)
 3. Download and use translate.py to convert all_sequences.fasta into translated amino acid sequence file; translated.fas: [translated.py](https://github.com/transitorybiorepository/analysis_pipeline/blob/main/translate.py)
 4. Run translated.fas through multiple sequence alignment (MSA) program MUSCLE, available at EMBL-EBI, using default settings (ClustalW output): [MUSCLE](https://www.ebi.ac.uk/jdispatcher/msa/muscle)
 5. Once MUSCLE has completed the MSA, select the 'Results Viewers' section, and using Jalview, select File -> Input Alignment -> From URL and input the resulting link. [Jalview installation](https://www.jalview.org/download/)
