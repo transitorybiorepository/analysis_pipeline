@@ -30,7 +30,7 @@ The FASTQC reports were done using University of Bristol's HPC BluePebble. For s
 4. Check the INSTALL.txt to see how to run FastQC according to your operating system.
 5. Once the application is running, open the FASTQ files to create the reports.
 
-The FastQC reports are available within the repository. Download and unzip the following zip file: [FastQC reports](https://github.com/transitorybiorepository/analysis_pipeline/blob/main/AI_Declaration_and_Prompts.zip)
+The FastQC reports are available within the repository. Download and unzip the following zip file: [FastQC reports](https://github.com/transitorybiorepository/analysis_pipeline/blob/main/FASTQC_reports.zip)
 
 ### AI prompts
 AI prompts were used to clarify syntax when creating the bash script. Please download and unzip the following zip file: [AI Declaration and Prompts](https://github.com/transitorybiorepository/analysis_pipeline/blob/main/AI_Declaration_and_Prompts.zip)
