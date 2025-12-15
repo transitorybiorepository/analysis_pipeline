@@ -175,6 +175,14 @@ done
 
 echo "Concatenated all fasta files into $all_sequences successfully!"
 
+#move all_sequences.fasta into current working dir 
+#so python script will run no problem
+echo "Moving $all_sequences to $(pwd) ready for translation into amino acid sequences."
+for file in ./fasta_files/all_sequences.fasta; do
+	mv "$all_sequences" ./
+done
+
+
 #archive all seperated .fasta files into fasta_archive
 echo "Archiving the individual .fasta files in $fasta_archive."
 for file in ./fasta_files/*part*.fasta; do
