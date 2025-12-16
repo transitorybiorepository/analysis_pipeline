@@ -6,7 +6,7 @@ from Bio.SeqRecord import SeqRecord
 def extract_genus_species_name(record):
     header = record.id
     parts = header.split("_")
-    # all_sequences.fasta file is written with headers in this format for readability downstream
+    # all_sequences.fasta file is written with headers in this format for readability downstream:
     # >ACCESSIONNUMBER:RANGE_GENUS_SPECIES
 
     # always take last two pieces of header
@@ -56,7 +56,7 @@ for record in sequences:
         best_protein,
         # keep the same FASTA ID which contains accession number, genus and species name
         id=record.id,
-        description=record.description,    # preserve full original header if necessary
+        description=record.description,    # keep full original header if necessary
         annotations={
             "type": "longest ORF",
             "frame": best_frame            # which reading frame the ORF came from
